@@ -1,0 +1,120 @@
+/*#########################################3*/
+/*RESET CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-style: inherit;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*#########################################3*/
+/*GLOBAL CSS*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 5px;
+    height: 75px;
+    background-color: #d4d7dd;
+}
+
+.main-h1 {
+    font-size: 35px;
+}
+
+.counters {
+    width: 250px;
+    height: 75px;
+    padding: 10px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+main {
+    display: flex;
+}
+
+nav {
+    flex-basis: 200px;
+}
+
+section {
+    flex-basis: auto;
+}
+
+.button-link {
+    display: block;
+    width: 150px;
+    background-color: #420000;
+    color: #f6f6f6;
+    padding: 10px;
+}
+
+.button-link:hover {
+    background-color: #230000;
+}
+
+.button-nav-link {
+    display: block;
+    background-color: #420000;
+    color: #f6f6f6;
+    padding: 10px;
+}
+
+.button-nav-link:hover {
+    background-color: #230000;
+}
+
+table {
+    border: solid 1px #DDEEEE;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+
+table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}

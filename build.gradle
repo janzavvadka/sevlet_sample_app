@@ -1,0 +1,18 @@
+plugins {
+    id 'idea'
+    id 'war'
+    id 'org.gretty' version '2.2.0'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile "javax.servlet.jsp:jsp-api:2.2"
+    compile "jstl:jstl:1.2"
+    compile "org.projectlombok:lombok:1.18.10"
+    compile "org.postgresql:postgresql:42.2.5"
+    testCompile 'junit:junit:4.12'
+}

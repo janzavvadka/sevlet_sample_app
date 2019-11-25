@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  serverhttp:
+    image: servlet_app_server
+    ports:
+      - "8080:8080"
+      - "9990:9990"
+      - "8787:8787"
+
+  postgresdata:
+    image: "postgres"
+    container_name: "servlet_app_postgres_1"
+    environment:
+      - POSTGRES_USER=sapp
+      - POSTGRES_PASSWORD=servlet
+      - POSTGRES_DB=servlet_app
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
